@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <help_text/>
+  <zoom_level>16</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>272</y>
+      <w>432</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>ESTOQUE
+--
+
+- produtos: Produto[]
+- pos: int
+
+--
+
+/+adicionarProduto(Produto): void/
+/+removerProduto(int): void/
+/+buscaPorNome(String): Produto/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>384</y>
+      <w>304</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=DARK_GRAY
+0...100		 	Possui</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>272</y>
+      <w>432</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>PRODUTO
+--
+
++ id: int
++ nome: String
+- preço: double
+- qnt: int
+
+--
+/+ vender(int): void/
+/+repor(int): void/
+//</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -9,7 +9,7 @@ public class Main
         est.adicionarProduto(new Produto(2, "Teclado Mecãnico", 120.0, 5));
         est.adicionarProduto(new Produto(3, "Monitor LED", 900.0, 5));
         est.removerProduto(3);
-        Produto pbusc = est.BuscaPorNome("Mouse Gamer");
+        Produto pbusc = est.buscaPorNome("Mouse Gamer");
         pbusc.vender(3);
         pbusc.repor(2);
         System.out.println(est);

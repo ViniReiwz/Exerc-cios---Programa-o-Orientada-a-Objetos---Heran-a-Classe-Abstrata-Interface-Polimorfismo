@@ -34,7 +34,7 @@ public class Estoque
         this.pos--;
     }
 
-    public Produto BuscaPorNome(String nomebuscado)
+    public Produto buscaPorNome(String nomebuscado)
     {
         for(int i =0; i < this.pos; i++)
         {
